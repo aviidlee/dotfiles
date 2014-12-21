@@ -64,7 +64,7 @@ augroup markdown
                     " 04. Vim UI                                                                 "
                     """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
                     set number                " show line numbers
-                    set numberwidth=6         " make the number gutter 6 characters wide
+                    set numberwidth=3         " make the number gutter 6 characters wide
                     set cul                   " highlight current line
                     set laststatus=2          " last window always has a statusline
                     set nohlsearch            " Don't continue to highlight searched phrases.
@@ -87,3 +87,19 @@ augroup markdown
                     set smartindent           " automatically insert one extra level of indentation
                     set smarttab              " use tabs at the start of a line, spaces elsewhere
                     set nowrap                " don't wrap text
+
+                    
+                    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+                    " 06. Customisations
+                    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+                    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+                    " 07. Plugins
+                    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+                    " Pathogen, plugin manager. 
+                    execute pathogen#infect()
+                    syntax on
+                    filetype plugin indent on
+
+                    " YouCompleteMe, auto-completer
+                    let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
