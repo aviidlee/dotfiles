@@ -162,3 +162,29 @@ function config {
   cd ~/dotfiles 
   ls -al
 }
+
+######## ROS & IRAT########  
+. /opt/ros/indigo/setup.sh
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:/home/irat/ros/irat
+export MY_IP=192.168.1.154
+export redrat=192.168.1.33
+export greenrat=192.168.1.34
+
+# Go to the iRat code directory 
+function torat {
+  cd /home/irat/ros/irat
+}
+
+# Ping the desired rat 
+# Arg1 is the full IP of the rat; e.g., 192.168.1.33
+function pingrat {
+  ping -c 3 $1
+}
+
+function ping_red {
+  pingrat $redrat
+}
+
+function ping_green {
+  pingrat $greenrat
+}
