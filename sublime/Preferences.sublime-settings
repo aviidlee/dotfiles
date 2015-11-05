@@ -1,0 +1,20 @@
+{
+	"args":
+	{
+		"mode": "mode_insert"
+	},
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"command": "_enter_normal_mode",
+	"context":
+	[
+		{
+			"key": "vi_insert_mode_aware"
+		}
+	],
+	"font_size": 10,
+	"keys":
+	[
+		"j",
+		"k"
+	]
+}
