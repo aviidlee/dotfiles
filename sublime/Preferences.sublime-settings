@@ -1,20 +1,17 @@
 {
-	"args":
-	{
-		"mode": "mode_insert"
-	},
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-	"command": "_enter_normal_mode",
-	"context":
+	"ignored_packages":
 	[
-		{
-			"key": "vi_insert_mode_aware"
-		}
+		"Vintage"
 	],
-	"font_size": 10,
-	"keys":
-	[
-		"j",
-		"k"
-	]
+
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+
+    // Word wrapping and prettification preferences
+    "word_wrap": true,
+    "wrap_width": 90,
+    "rulers": [90, 120], 
+
 }
+
+

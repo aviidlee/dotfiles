@@ -117,13 +117,6 @@ fi
 # For pythonbrew
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc 
 
-# For going directly into deco3801 development environment.
-function deco {
-	cd $HOME/code/deco3801
-	source env/bin/activate
-	cd $HOME/code/deco3801/cprs/kassdt/code_review
-}
-
 # Shorten the directory shown.
 function short {
     if [ "$#" -ne 1 ]; then
@@ -146,6 +139,11 @@ function default {
 # Go to the code directory from anywhere
 function codehome {
     cd $HOME/code
+}
+
+# Go to machine learning directory 
+function ml {
+  cd $HOME/CompSci/MachineLearning
 }
 
 # Avoid typing python manage.py all the time!!
