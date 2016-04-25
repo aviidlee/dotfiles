@@ -154,3 +154,8 @@ alias py='python'
 function moss {
     ssh s4231110@moss.labs.eait.uq.edu.au
 }
+
+# I can't be bothered to type git push origin master
+function gpush {
+  git push origin master
+}
