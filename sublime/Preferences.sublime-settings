@@ -1,17 +1,16 @@
 {
+	"font_size": 10,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-
+	"rulers":
+	[
+		90,
+		120
+	],
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
-
-    // Word wrapping and prettification preferences
-    "word_wrap": true,
-    "wrap_width": 90,
-    "rulers": [90, 120], 
-
+	"word_wrap": true,
+	"wrap_width": 90
 }
-
-

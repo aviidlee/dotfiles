@@ -138,7 +138,7 @@ function default {
 
 # Go to the code directory from anywhere
 function codehome {
-    cd $HOME/code
+    cd $HOME/CompSci
 }
 
 # Go to machine learning directory 
